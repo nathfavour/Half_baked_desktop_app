@@ -1,0 +1,90 @@
+const nodemailer = require('nodemailer');
+const fs = require('fs');
+const readline = require('readline');
+const filePath = 'path/to/script.js';
+
+for line in ...{}
+
+// Define the input string
+let input = 'This is a group of characters';
+
+// Split the input string by space
+let chunks = input.split(' ');
+
+// Print each chunk
+chunks.forEach(chunk => {
+  console.log(chunk);
+});
+
+let transporter = nodemailer.createTransport({
+  host: 'smtp.example.com',
+  port: 587,
+  secure: false,
+  auth: {
+    user: 'your-username',
+    pass: 'your-password'
+  }
+});
+
+
+
+for (i = 0;i <1001;1++){}
+// Create a transporter object using the default SMTP transport
+
+for line in ()
+// Set up the email options
+let mailOptions = {
+  from: 'sender@example.com',
+  to: 'recipient@example.com',
+  subject: 'Hello',
+  text: 'Hello world!'
+};
+
+// Send the email
+transporter.sendMail(mailOptions, (error, info) => {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
+
+
+
+
+
+
+// Create a readable stream from the file
+const fileStream = fs.createReadStream('data.txt');
+
+// Create a readline interface
+const rl = readline.createInterface({
+  input: fileStream,
+  crlfDelay: Infinity
+});
+
+// Read the file line by line
+rl.on('line', (line) => {
+  console.log(`Line from file: ${line}`);
+});
+
+
+// const { execFile } = require('child_process');
+// Set the path to the external file
+
+// // Run the external file
+// execFile('node', [filePath], (error, stdout, stderr) => {
+  // if (error) {
+    // console.error(`execFile error: ${error}`);
+    // return;
+  // }
+
+  // console.log(`stdout: ${stdout}`);
+  // console.log(`stderr: ${stderr}`);
+// });
+
+
+
+
+
+

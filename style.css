@@ -1,0 +1,65 @@
+body{
+    background: #202020;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+	    background-image: url('https://th.bing.com/th/id/OIG.OuOxtSxy_B0THdyohVfF?w=173&h=173&c=6&r=0&o=5&dpr=1.5&pid=ImgGn');
+		background-size: cover;
+		background-repeat: repeat;
+}
+.wrapper{
+    width: 50%;
+    margin: 0 auto;
+}
+.button-container{
+    display: flex;
+    /* margin-top: 10px; */
+    /* gap: 15px; */
+}
+
+#editor{
+    background-color: #3e3e3e;
+    /* color: white; */
+
+}
+button{
+    padding: 10px;
+    color: white;
+    background-color: rgb(10, 185, 164);
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: rgb(7, 220, 195);
+}
+
+.input{
+	flex:1;
+	background-color: black;
+	width: default;
+	height: default;
+	}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+textarea{
+	background-color:black;
+	background-image: none;
+}
